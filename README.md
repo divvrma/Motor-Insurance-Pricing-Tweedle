@@ -70,6 +70,9 @@ The Shiny application provides:
 - **Distribution Plots**: Visualize premium change effects across policies
 - **Calibration Analysis**: Model accuracy by prediction deciles
 
+![Motor Insurance Pricing App Screenshot](app-screenshot.png)
+*Interactive rate change simulation showing premium distribution and model calibration*
+
 ## Technical Details
 
 ### Tweedie Distribution
