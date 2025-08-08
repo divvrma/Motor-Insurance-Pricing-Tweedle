@@ -2,7 +2,7 @@
 
 A complete R implementation of motor insurance pricing using Tweedie Generalized Linear Models (GLM) and Gradient Boosting Machines (GBM) on French motor insurance data, featuring an interactive Shiny application for rate change simulation.
 
-## 🚗 Overview
+## Overview
 
 This project demonstrates advanced actuarial modeling techniques for motor insurance pricing:
 
@@ -13,7 +13,7 @@ This project demonstrates advanced actuarial modeling techniques for motor insur
 
 Built using the CAS `freMTPL2` dataset - a real-world French motor third-party liability insurance dataset with 678,013 policies.
 
-## 📊 Key Features
+## Key Features
 
 - **Data Processing**: Automated cleaning and feature engineering of insurance data
 - **Model Training**: Tweedie power parameter estimation via profile likelihood
@@ -21,7 +21,7 @@ Built using the CAS `freMTPL2` dataset - a real-world French motor third-party l
 - **Rate Simulation**: Interactive testing of portfolio-wide rate changes
 - **Loss Ratio Analysis**: Real-time calculation of impact on profitability
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - R (>= 4.0.0)
@@ -39,7 +39,7 @@ source("02_plots_metrics.R")
 shiny::runApp(".")
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── 01_fit_models.R      # Main modeling script
@@ -53,7 +53,7 @@ shiny::runApp(".")
 └── figures/           # Performance plots (generated)
 ```
 
-## 🎯 Model Performance
+## Model Performance
 
 The Tweedie GLM is specifically designed for insurance data:
 - **Power Parameter**: Automatically estimated via profile likelihood (typically ~1.2-1.7)
@@ -61,7 +61,7 @@ The Tweedie GLM is specifically designed for insurance data:
 - **Right Skew**: Accommodates high-value claims in the tail
 - **Exposure Weighting**: All metrics properly weighted by policy exposure
 
-## 💡 Interactive Features
+## Interactive Features
 
 The Shiny application provides:
 - **Model Selection**: Switch between GLM and GBM predictions
@@ -70,7 +70,7 @@ The Shiny application provides:
 - **Distribution Plots**: Visualize premium change effects across policies
 - **Calibration Analysis**: Model accuracy by prediction deciles
 
-## 🔧 Technical Details
+## Technical Details
 
 ### Tweedie Distribution
 - **Variance Function**: V(μ) = φμᵖ where p ∈ (1,2)
@@ -82,7 +82,7 @@ The Shiny application provides:
 - **Calibration**: Predicted vs observed pure premiums by decile
 - **Lift Analysis**: Cumulative loss concentration in top deciles
 
-## 📈 Usage Examples
+## Usage Examples
 
 ### Running Models
 ```r
@@ -105,7 +105,7 @@ shiny::runApp(".")
 # Access at http://localhost:3838
 ```
 
-## 📋 Data Source
+## Data Source
 
 Uses CAS `freMTPL2` datasets:
 - **freMTPL2freq**: Policy-level frequency data (678,013 records)
@@ -113,7 +113,7 @@ Uses CAS `freMTPL2` datasets:
 - **Features**: Vehicle characteristics, driver demographics, geographic factors
 - **Target**: Pure premium (claim cost per unit exposure)
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - [ ] Individual risk factor adjustments
 - [ ] Territory-specific rate changes  
@@ -121,7 +121,7 @@ Uses CAS `freMTPL2` datasets:
 - [ ] Advanced visualization dashboards
 - [ ] Export capabilities for rate filings
 
-## 📄 License
+## License
 
 Open source project for educational and research purposes in actuarial science and insurance analytics.
 
