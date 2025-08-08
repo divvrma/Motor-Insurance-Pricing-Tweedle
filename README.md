@@ -1,5 +1,8 @@
 # Motor Insurance Pricing with Tweedie GLM
 
+![Motor Insurance Pricing App Screenshot](app-screenshot.png)
+*Interactive rate change simulation showing premium distribution and model calibration*
+
 A complete R implementation of motor insurance pricing using Tweedie Generalized Linear Models (GLM) and Gradient Boosting Machines (GBM) on French motor insurance data, featuring an interactive Shiny application for rate change simulation.
 
 ## Overview
@@ -69,9 +72,6 @@ The Shiny application provides:
 - **Loss Ratio**: Real-time profitability impact calculation
 - **Distribution Plots**: Visualize premium change effects across policies
 - **Calibration Analysis**: Model accuracy by prediction deciles
-
-![Motor Insurance Pricing App Screenshot](app-screenshot.png)
-*Interactive rate change simulation showing premium distribution and model calibration*
 
 ## Technical Details
 
