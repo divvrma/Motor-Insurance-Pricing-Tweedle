@@ -1,0 +1,26 @@
+# R
+.Rhistory
+.RData
+.Ruserdata
+*.rds
+
+# Generated directories and files
+data/
+models/
+outputs/
+figures/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.Rproj
+*.Rproj.user
+
+# Temporary files
+*~
+*.tmp
+*.bak
